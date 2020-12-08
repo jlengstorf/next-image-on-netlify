@@ -13,12 +13,15 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Next Image on Netlify</h1>
 
-        <Image
-          src="/jason-rogers.jpg"
-          alt="Jason in the Mr. Rogers “I’m not very good at it” meme."
-          width="1368"
-          height="1044"
-        />
+        <p>
+          <Image
+            src="/jason-rogers.jpg"
+            alt="Jason in the Mr. Rogers “I’m not very good at it” meme."
+            width="1368"
+            height="1044"
+            layout="responsive"
+          />
+        </p>
       </main>
     </div>
   );
