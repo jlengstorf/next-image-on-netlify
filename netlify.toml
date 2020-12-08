@@ -1,0 +1,9 @@
+[build]
+  command = "yarn build"
+  publish = "public"
+
+[[redirects]]
+  from = "/_next/image"
+  query = { url = ":url", w = ":width", q = ":quality" }
+  to = "https://res.cloudinary.com/jlengstorf/fetch/w_:width,q_auto,f_auto/https://next-image-on.netlify.app/:url"
+  status = 200
