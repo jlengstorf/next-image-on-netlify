@@ -6,7 +6,7 @@ exports.handler = async (event) => {
   const quality = parseInt(q);
 
   const imageUrl = url.startsWith('/')
-    ? `${process.env.URL ?? 'http://localhost:8888'}${url}`
+    ? `${process.env.URL || 'http://localhost:8888'}${url}`
     : url;
   const image = await jimp.read(imageUrl);
 
