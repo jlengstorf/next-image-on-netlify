@@ -17,7 +17,6 @@ exports.handler = async (event) => {
   return {
     statusCode: 200,
     headers: {
-      'Cache-Control': 'max-age=60',
       'Content-Type': image.getMIME(),
     },
     body: imageBuffer.toString('base64'),
