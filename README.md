@@ -5,7 +5,7 @@ This repo is a proof of concept demonstrating how to use the `next/image` functi
 This implementation uses [Netlify Functions](https://www.netlify.com/products/functions/?utm_source=github&utm_medium=next-image-jl&utm_campaign=devex) to process images on the fly by setting up a rewrite rule to handle the [special endpoint `next/image` sends requests to](https://github.com/vercel/next.js/blob/8340e6d34562ad575293b5699023144fc47831d2/packages/next/client/image.tsx#L480).
 
 <details>
-  <summary>Additional details about how `next/image` works under the hood</summary>
+  <summary><strong>Expand for additional details about how `next/image` works under the hood</strong></summary>
 
 ## Images are sent to a special endpoint for processing
 
